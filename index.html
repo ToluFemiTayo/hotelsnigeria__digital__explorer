@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TFT Hotel Booking Nigeria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <!-- Bootstrap CSS -->
+  <link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/playground.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <!-- logo starts here -->
+      <a class="navbar-brand site__logowrapper" href="#">
+        <figure class="logo__img">
+          <img src="assets/img/logo.PNG" alt="logo.PNG" />
+        </figure>
+        Hotel Booking Nigeria Limited
+      </a>
+      <!-- logo ends here -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto">
+
+        </div>
+
+        <!-- right menu starts here -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link font-weight-bold text__color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Contact
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fab fa-whatsapp"></i>
+                </span>
+                Whatapp : +234703370385</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fas fa-phone"></i>
+                </span>
+                Phone Number : +234703370385</a>
+              <a class="dropdown-item text-center" href="#">
+                <span class="preferred__currency">
+                  <i class="fas fa-inbox"></i>
+                </span>
+                Email : omodarafemi2123@gmail.com
+                <br> omodara276@yahoo.com
+              </a>
+            </div>
+          </li>
+
+          <!-- check code well for proper rendering -->
+          <li class="nav-item dropdown">
+            <form>
+              <div class="form-group">
+                <select class="form-control text__color preferredcurrency__select" id="exampleFormControlSelect1">
+                  <option class="dropdown-item" value>Choose preferred currency for the hotel rates:</option>
+                  <option class="dropdown-item">
+                    <span class="preferred__currency">₦
+                    </span>
+                    <p class="preferredcurrency__option"> Nigerian : Naira</p>
+                  </option>
+                  <option class="dropdown-item" value="001">
+                    <span class="preferred__currency">€
+                      <i class="fas fa-euro-sign"></i>
+                    </span>
+                    European : Euro
+                  </option>
+                  <option class="dropdown-item" value="002">
+                    <span class="preferred__currency">$
+                      <i class="fas fa-dollar-sign"></i>
+                    </span>
+                    U.S : Dollar
+                  </option>
+                  <option class="dropdown-item">
+                    <span class="preferred__currency">£
+                      <i class="fas fa-pound-sign"></i>
+                    </span>
+                    British : Pound Sterling
+                  </option>
+                </select>
+              </div>
+            </form>
+            <!-- <a class="nav-link dropdown-toggle font-weight-bold text__color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Preferred Currency
+            </a> -->
+            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <p class="dropdown-item">Choose a preferred currency for the hotel rates:</p>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">₦
+                  <i class="fas fa-naira-sign"></i>
+                </span>
+                Nigerian: Naira</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fab fa-whatsapp"></i>
+                </span>
+                European: Euro</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fas fa-dollar-sign"></i>
+                </span>
+                U.S: Dollar</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fas fa-pound-sign"></i>
+                </span>
+                British: Pound Sterling</a>
+            </div> -->
+          </li>
+          <!-- check code well for proper rendering -->
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link font-weight-bold text__color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fas fa-user-circle"></i>
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Log in</a>
+              <a class="dropdown-item" href="#">Sign up</a>
+            </div>
+          </li>
+        </ul>
+        <!-- right menu ends here -->
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- landing image starts here -->
+    <div class="card bg-dark text-white featured__item">
+      <img src="assets/img/flourish-2031232__340.png" class="card-img" alt="abstract-1781479__340.png">
+      <!-- <img src="assets/img/img_hero.jpg" class="card-img" alt="img_hero.jpg"> -->
+      <div class="card-img-overlay cdimg__overlay">
+        <h1 class="card-title">FIND AND BOOK HOTELS IN NIGERIA</h1>
+        <h2 class="card-text">Search through 11,323 hotels in Nigeria</h2>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+    <!-- landing image ends here -->
+
+    <!-- search section starts here -->
+    <div class="search__boxwrapper" id="navbar__top">
+      <div class="container shadow-lg search__form">
+        <div class="navbartop__items">
+          
+          <!-- logo starts here -->
+          <div class="site__logo">
+            <a href="#">
+              <figure class="logo__img">
+                <img src="assets/img/logo.PNG" alt="logo.PNG" />
+              </figure>
+            </a>
+          </div>
+          <!-- logo ends here -->
+
+          <!-- search form starts here -->
+          <form class="newsearch__form" action="">
+            <div class="row">
+              <div class="col-6 col-sm-6 col-md-4 search__boxcol">
+                <div class="search__box">
+                  <span class="search__boxicon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                  <input type="search" class="w-100 search__input" id="" placeholder="search for a city or hotel">
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-3 search__boxcol">
+                <div class="search__box">
+                  <span class="search__boxicon">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <input type="text" id="checkin" name="checkin" class="w-100 search__input" placeholder="Check in" value="" data-date-format="dd-mm-yyyy"
+                    aria-label="Checkin date" readonly>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-3 search__boxcol">
+                <div class="search__box">
+                  <span class="search__boxicon">
+                    <i class="far fa-calendar-alt"></i>
+                  </span>
+                  <input type="text" id="checkout" name="chckout" class="w-100 search__input" placeholder="Check out" value="" data-date-format="dd-mm-yyyy"
+                    readonly="" aria-label="Checkout date">
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-2 search__boxcol">
+                <button type="submit" class="btn btn-primary w-100">Find Hotels
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- search form ends here -->
+        
+        </div>
+      </div>
+    </div>
+    <!-- search section ends here -->
+
+    <!-- suggested destinations -->
+    <!-- <div class="container">
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Suggested Destinations</h2>
+        </div>
+        <p>See our top pick of cities visited by most guests</p>
+        <div class="row">
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Owerri</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Ikeja</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Port Harcourt</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Abuja </h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Port Harcourt </h2>
+                <p>
+                  350 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Ibadan</h2>
+                <p>
+                  257 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Calabar </h2>
+                <p>
+                  454 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2  search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Ekiti</h2>
+                <p>
+                  220 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Kano</h2>
+                <p>
+                  154 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Ondo</h2>
+                <p>
+                  420 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Lekki</h2>
+                <p>
+                  450 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-2 search__boxcol">
+            <a href="#">
+              <div class="suggested__city">
+                <h2 class="card__title">Abia</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="container">
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Suggested Destinations</h2>
+        </div>
+        <p>See our top pick of cities visited by most guests</p>
+        <div class="items">
+          <div class="search__boxcol item item1">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Owerri01</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item02">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Ikeja02</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item03">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Port Harcourt03</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item04">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Abuja04</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item05">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Port Harcourt05</h2>
+                <p>
+                  350 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item06">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Ibadan06</h2>
+                <p>
+                  257 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item07">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Calabar </h2>
+                <p>
+                  454 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item08">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Ekiti</h2>
+                <p>
+                  220 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item09">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Kano09</h2>
+                <p>
+                  154 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item10">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Ondo10</h2>
+                <p>
+                  420 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item11">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Lekki11</h2>
+                <p>
+                  450 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="search__boxcol item item12">
+            <a href="hotels__in__a__state.html">
+              <div class="suggested__city">
+                <h2 class="card__title">Abia</h2>
+                <p>
+                  354 hotels
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Today's Top Deals -->
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Today's Top Deals</h2>
+        </div>
+        <p>A quick view of hotels offering the best deals
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class="card top__deals">
+                <figure class="top__dealsimg">
+                  <img src="assets/img/Capture1.2.PNG" class="card-img-top" alt="...">
+                </figure>
+                <div class="card__body text-left w-100">
+                  <h4 class="card-title">Centurion Apartments</h4>
+                  <p class="card-text">
+                    <a href="#">Maitama</a>,
+                    <a href="#">Abuja</a>
+                  </p>
+                </div>
+                <div class="discount__position">
+                  <div>
+                    <p class="listinghotels__discount card__discount">
+                      Up to
+                      <span>25%</span> off
+                    </p>
+                    <div class=""></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class="card top__deals">
+                <figure class="top__dealsimg">
+                  <img src="assets/img/Capture1.2.PNG" class="card-img-top" alt="...">
+                </figure>
+                <div class="card__body text-left w-100">
+                  <h4 class="card-title">November 5 Hotel</h4>
+                  <p class="card-text">
+                    <a href="#">Ikeja</a>,
+                    <a href="#">Lagos</a>
+                  </p>
+                </div>
+                <div class="discount__position">
+                  <div>
+                    <p class="listinghotels__discount card__discount">
+                      Up to
+                      <span>35%</span> off
+                    </p>
+                    <div class=""></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class="card top__deals">
+                <figure class="top__dealsimg">
+                  <img src="assets/img/Capture1.2.PNG" class="card-img-top" alt="...">
+                </figure>
+                <div class="card__body text-left w-100">
+                  <h4 class="card-title">Double M Exquisite Suites</h4>
+                  <p class="card-text">
+                    <a href="#">Lekki</a>,
+                    <a href="#">Lagos</a>
+                  </p>
+                </div>
+                <div class="discount__position">
+                  <div>
+                    <p class="listinghotels__discount card__discount">
+                      Up to
+                      <span>63%</span> off
+                    </p>
+                    <div class=""></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popular cities with Hotels.ng travellers -->
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Popular cities with Hotels.ng travellers</h2>
+        </div>
+        <p>See the top destinations people are traveling to
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class=" bg-dark text-white popular__cityimg">
+                <!-- <figure class="popular__cityimg"> -->
+                <img src="assets/img/flourish-2031232__340.png" class="card-img" alt="flourish-2031232__340.png">
+                <!-- </figure> -->
+                <div class="card-img-overlay">
+                  <div class="overlay__text">
+                    <h5 class="card-title">Akwa Ibom</h5>
+                    <p class="card-text">433 Hotels</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class=" bg-dark text-white popular__cityimg">
+                <!-- <figure class="popular__cityimg"> -->
+                <img src="assets/img/abstract-1781479__340.png" class="card-img" alt="abstract-1781479__340.png">
+                <!-- </figure> -->
+                <div class="card-img-overlay">
+                  <div class="overlay__text">
+                    <h5 class="card-title">Abuja</h5>
+                    <p class="card-text">919 Hotels</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class=" bg-dark text-white popular__cityimg">
+                <!-- <figure class="popular__cityimg"> -->
+                <img src="assets/img/flourish-2031232__340.png" class="card-img" alt="flourish-2031232__340.png">
+                <!-- </figure> -->
+                <div class="card-img-overlay">
+                  <div class="overlay__text">
+                    <h5 class="card-title">Ekiti</h5>
+                    <p class="card-text">219 Hotels</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class=" bg-dark text-white popular__cityimg">
+                <!-- <figure class="popular__cityimg"> -->
+                <img src="assets/img/abstract-1781479__340.png" class="card-img" alt="abstract-1781479__340.png">
+                <!-- </figure> -->
+                <div class="card-img-overlay">
+                  <div class="overlay__text">
+                    <h5 class="card-title">Port Harcourt</h5>
+                    <p class="card-text">354 Hotels</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class=" bg-dark text-white popular__cityimg">
+                <!-- <figure class="popular__cityimg"> -->
+                <img src="assets/img/flourish-2031232__340.png" class="card-img" alt="flourish-2031232__340.png">
+                <!-- </figure> -->
+                <div class="card-img-overlay">
+                  <div class="overlay__text">
+                    <h5 class="card-title">Delta</h5>
+                    <p class="card-text">571 Hotels</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <a href="#">
+              <div class=" bg-dark text-white popular__cityimg">
+                <!-- <figure class="popular__cityimg"> -->
+                <img src="assets/img/abstract-1781479__340.png" class="card-img" alt="abstract-1781479__340.png">
+                <!-- </figure> -->
+                <div class="card-img-overlay">
+                  <div class="overlay__text">
+                    <h5 class="card-title">Cross River</h5>
+                    <p class="card-text">357 Hotels</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- select city to book hotel -->
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Select the City to Book Hotels in</h2>
+        </div>
+        <p>11,323 hotels in 1,787 cities in Nigeria
+        </p>
+        <div class="row text-left">
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Abia</h5>
+            </a>
+            <p>241 hotels in Abia with over 124 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Abuja</h5>
+            </a>
+            <p>919 hotels in Abuja with over 1,845 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Adamawa</h5>
+            </a>
+            <p>59 hotels in Adamawa with over 34 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Akwa Ibom</h5>
+            </a>
+            <p>433 hotels in Akwa Ibom with over 237 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Bauchi</h5>
+            </a>
+            <p>45 hotels in Bauchi with over 38 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Bayelsa</h5>
+            </a>
+            <p>177 hotels in Bayelsa with over 40 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Benue</h5>
+            </a>
+            <p>285 hotels in Benue with over 32 reviews
+            </p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Borno</h5>
+            </a>
+            <p>21 hotels in Borno with over 4 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Cross River</h5>
+            </a>
+            <p>357 hotels in Cross River with over 294 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Delta</h5>
+            </a>
+            <p>571 hotels in Delta with over 329 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Ebonyi</h5>
+            </a>
+            <p>85 hotels in Ebonyi with over 13 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Edo</h5>
+            </a>
+            <p>326 hotels in Edo with over 368 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Enugu</h5>
+            </a>
+            <p>290 hotels in Enugu with over 346 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Gombe</h5>
+            </a>
+            <p>38 hotels in Gombe with over 18 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Imo</h5>
+            </a>
+            <p>274 hotels in Imo with over 231 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Jigawa</h5>
+            </a>
+            <p>33 hotels in Jigawa with over 4 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Kaduna</h5>
+            </a>
+            <p>270 hotels in Kaduna with over 210 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Kogi</h5>
+            </a>
+            <p>240 hotels in Kogi with over 36 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Lagos</h5>
+            </a>
+            <p>2,808 hotels in Lagos with over 6,394 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Niger</h5>
+            </a>
+            <p>102 hotels in Niger with over 41 reviews
+            </p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Ogun</h5>
+            </a>
+            <p>643 hotels in Ogun with over 367 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Osun</h5>
+            </a>
+            <p>
+              276 hotels in Osun with over 225 reviews
+            </p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Taraba</h5>
+            </a>
+            <p>92 hotels in Taraba with over 5 reviews</p>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <a href="#">
+              <h5>Zamfara</h5>
+            </a>
+            <p>24 hotels in Zamfara with over 6 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- special hotel deals and offers -->
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Special Hotel Deals and Offers</h2>
+        </div>
+        <p>Enter your email address to receive hotel deals</p>
+        <form>
+          <div class="row justify-content-center">
+            <div class="col-8 col-sm-6 col-md-6 search__boxcol">
+              <div class="search__box">
+                <input type="email" class="form-control w-100 search__input" id="formGroupEmailAddress" name="email" placeholder="name@example.com"
+                  required>
+                <small class="form-text d-none">Your email is not correct.</small>
+              </div>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 search__boxcol">
+              <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+            </div>
+            <!-- <div class="hoteldeals__subscribe">
+            <input type="email" class="form-control search__input" id="formGroupEmailAddress" name="email" placeholder="name@example.com">
+            <button type="submit" class="btn btn-outline-primary">Subscribe</button>
+        </div> -->
+            <!-- <div class="form-group">
+            <input type="email" class="form-control" id="formGroupEmailAddress" name="email" placeholder="name@example.com">
+            <small class="form-text d-none">Your email is not correct.</small>
+          </div>
+          <button type="submit" class="btn btn-outline-primary">Subscribe</button> -->
+          </div>
+        </form>
+      </div>
+
+      <!-- We've been featured in -->
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>We've been featured in</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-6 col-md-3">
+            <img src="assets/img/BCC.PNG" alt="BCC.PNG" />
+          </div>
+          <div class="col-6 col-sm-6 col-md-3">
+            <img src="assets/img/Forbes.PNG" alt="Forbes.PNG" />
+          </div>
+          <div class="col-6 col-sm-6 col-md-3">
+            <img src="assets/img/Newsweek.PNG" alt="Newsweek.PNG" />
+          </div>
+          <div class="col-6 col-sm-6 col-md-3">
+            <img src="assets/img/WebAfrica.PNG" alt="WebAfrica.PNG" />
+          </div>
+        </div>
+      </div>
+
+      <!-- get more bookings for your hotel -->
+      <div class="text-center card__wrapper">
+        <div class="sub__heading">
+          <h2>Get More Bookings for Your Hotel</h2>
+        </div>
+        <p>Find out why over 11,323 hotel managers trust Hotels.ng</p>
+        <a href="addyourhotel.html" class="btn btn-primary ">Add Your Hotel</a>
+      </div>
+
+    </div>
+
+  </main>
+  <footer>
+    <!-- download app here -->
+    <section class="container">
+      <div class="text-center">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6">
+            <!-- <div class="card"> -->
+            <figure class="app__img">
+              <img alt="Android App Image" src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/get-app-image.png">
+            </figure>
+            <!-- </div> -->
+          </div>
+          <div class="col-12 col-sm-6 col-md-6">
+            <div class="app__img">
+              <div class="getapp__text">
+                <div class="getapp__header">
+                  <h1>Get the app</h1>
+                </div>
+                <h3>hotels.ng</h3>
+                <p>Book your hotel instantly with our Android App.</p>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=ng.hotels.app">
+                  <figure class="get__appplaystore">
+                    <img alt="Get the Hotels.ng app" src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/google-play.png">
+                  </figure>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- moving text  -->
+    <section class="text-center banner__section">
+      <marquee width="90%" direction="left" height="100%" class="p-1">
+        <h4>
+          My name is Omodara, Tolulope Omotayo, {Also known as ToluFemiTayo ... TFT} a Front-end Developer.
+          <span class="text-danger font-weight-bold">|</span> Here are links to my projects ...
+          <a href="https://tolufemitayo.github.io/Project__one/">https://tolufemitayo.github.io/Project__one/</a> ...
+          <a href="https://tolufemitayo.github.io/Project__two/">https://tolufemitayo.github.io/Project__two/</a> ...
+          <a href="https://tolufemitayo.github.io/www.tolufemitayo.com">https://tolufemitayo.github.io/www.tolufemitayo.com</a>
+          ...
+          <span class="text-danger font-weight-bold">|</span> Hotel Booking Nigeria Limited is project I wrote from the scratch after my training in Frontend Development.
+          <span class="text-danger font-weight-bold">|</span> By
+          <a href="#" class="text-success">booking</a> in the Hotel Booking Nigeria Limited, you will certainly be satisfied with our services which will
+          make a difference in your stay in the environment.</h4>
+      </marquee>
+    </section>
+
+    <!-- footer links -->
+    <section class="text-left text-white footer__wrapper footer__quicklinks">
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="text-left sub__heading">
+            <h4>Company</h4>
+          </div>
+          <ul>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Job Vacancy</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Private Policy</a>
+            </li>
+            <li>
+              <a href="#">Press Page</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">How it Works</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="text-left sub__heading">
+            <h4>Community</h4>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
+            <li>
+              <a href="#">Linkdlin</a>
+            </li>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Google</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Tourist Attractions</a>
+            </li>
+            <li>
+              <a href="#">Travel Blog</a>
+            </li>
+            <li>
+              <a href="#">Travel Guide</a>
+            </li>
+            <li>
+              <a href="#">Top Hotels in Nigeria</a>
+            </li>
+            <li>
+              <a href="#">Top Places in Nigeria</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="text-left sub__heading">
+            <h4>Top Cities</h4>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Hotels in Lagos</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Owerri</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Abia</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Port Harcourt</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Jos</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Ikoyi</a>
+            </li>
+            <li>
+              <a href="#">Hotels in MaryLand</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Abuja</a>
+            </li>
+            <li>
+              <a href="#">Hotels in Calabar</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="text-left sub__heading">
+            <h4>Top Attractions</h4>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Abuja</a>
+            </li>
+            <li>
+              <a href="#">Calabar</a>
+            </li>
+            <li>
+              <a href="#">Lagos</a>
+            </li>
+            <li>
+              <a href="#">Enugu</a>
+            </li>
+            <li>
+              <a href="#">Jos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="text-left sub__heading">
+            <h4>Top Hotels</h4>
+          </div>
+          <ul>
+            <li>
+              <a href="#">
+                Hotel Ibis Lagos Ikeja
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Beni Apartments
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Limeridge Hotel
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Grand Ibro Hotel
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Transcorp Hotels
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Silver Grandeur Hotel
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Beni Gold Hotel and Apartments
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Jeromes Garden and Suites
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer navbar -->
+    <div class="navbar navbar-expand-lg text-white footer__navbar card__wrapper footer__wrapper">
+      <div class="navbar-nav mr-auto">
+        <!-- <p>Copyright © 2019 Hotel Booking Nigeria Limited. All Rights Reserved</p> -->
+        <figure class="logo__img">
+          <img src="assets/img/logo.PNG" alt="logo.PNG" />
+        </figure>
+      </div>
+
+      <!-- social networks here -->
+      <div class="footer__wrapper fwpr">
+        <div class="sub__heading">
+          <h4>Social Network</h4>
+        </div>
+        <ul class="navbar-nav">
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fab fa-google"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- certification here -->
+      <div class="certified__org">
+        <span>Certified by:</span>
+        <figure class="certifiedorg__icon">
+          <img src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/footer/nanta.svg" alt="nanta icon" title="National Association of Nigeria Travel Agencies (NANTA)">
+          <img src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/footer/ntdc.svg" alt="ntdc icon" title="Nigerian Tourism Development Corporation (NTDC)">
+        </figure>
+      </div>
+    </div>
+
+    <!-- copyright here -->
+    <div class="text-left copyright__section">
+      <p>Copyright © 2019 TFT Hotel Booking Nigeria Limited. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- sticky navbar -->
+  <script>
+    const nav = document.querySelector('#navbar__top');
+    const topOfNav = nav.offsetTop;
+
+
+    function fixNav() {
+      // console.log(topOfNav, window.scrollY);
+      if (window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = nav.offsetTop + 'px';
+        document.body.classList.add('fixed__nav');
+      } else {
+        document.body.classList.remove('fixed__nav');
+        document.body.style.paddingTop = 0;
+      }
+    }
+
+    window.addEventListener('scroll', fixNav);
+  </script>
+
+  <script src="assets/plugins/jquery.min.js"></script>
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

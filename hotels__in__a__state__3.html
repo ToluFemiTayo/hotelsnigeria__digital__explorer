@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TFT Hotel Booking Nigeria</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">
+	<!-- <link href="assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" /> -->
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	 crossorigin="anonymous"> -->
+
+	<!-- Main CSS -->
+	<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/playground.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-primary" id="nav__top">
+			<!-- logo starts here -->
+			<a class="navbar-brand site__logowrapper" href="#">
+				<figure class="logo__img">
+					<img src="assets/img/logo.PNG" alt="logo.PNG" />
+				</figure>
+				Hotel Booking Nigeria Limited
+			</a>
+			<!-- logo ends here -->
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="navbar-nav mr-auto">
+
+				</div>
+
+				<!-- right menu starts here -->
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link font-weight-bold text__color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Contact
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">
+								<span class="preferred__currency">
+									<i class="fab fa-whatsapp"></i>
+								</span>
+								Whatapp : +234703370385</a>
+							<a class="dropdown-item" href="#">
+								<span class="preferred__currency">
+									<i class="fas fa-phone"></i>
+								</span>
+								Phone Number : +234703370385</a>
+							<a class="dropdown-item text-center" href="#">
+								<span class="preferred__currency">
+									<i class="fas fa-inbox"></i>
+								</span>
+								Email : omodarafemi2123@gmail.com
+								<br> omodara276@yahoo.com
+							</a>
+						</div>
+					</li>
+
+					<!-- check code well for proper rendering -->
+					<li class="nav-item dropdown">
+						<!-- <form>
+							<div class="form-group">
+								<select class="form-control text__color preferredcurrency__select" id="exampleFormControlSelect1">
+									<option class="dropdown-item" selected>Choose preferred currency for the hotel rates:</option>
+									<option class="dropdown-item">
+										<span class="preferred__currency">₦
+										</span>
+										<p class="preferredcurrency__option"> Nigerian : Naira</p>
+									</option>
+									<option class="dropdown-item">
+										<span class="preferred__currency">€
+											<i class="fas fa-euro-sign"></i>
+										</span>
+										European : Euro
+									</option>
+									<option class="dropdown-item">
+										<span class="preferred__currency">$
+											<i class="fas fa-dollar-sign"></i>
+										</span>
+										U.S : Dollar
+									</option>
+									<option class="dropdown-item">
+										<span class="preferred__currency">£
+											<i class="fas fa-pound-sign"></i>
+										</span>
+										British : Pound Sterling
+									</option>
+								</select>
+							</div>
+						</form> -->
+						<a class="nav-link dropdown-toggle font-weight-bold text__color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Preferred Currency
+            </a> 
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <p class="dropdown-item">Choose a preferred currency for the hotel rates:</p>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">₦
+                  <i class="fas fa-naira-sign"></i>
+                </span>
+                Nigerian: Naira</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fab fa-whatsapp"></i>
+                </span>
+                European: Euro</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fas fa-dollar-sign"></i>
+                </span>
+                U.S: Dollar</a>
+              <a class="dropdown-item" href="#">
+                <span class="preferred__currency">
+                  <i class="fas fa-pound-sign"></i>
+                </span>
+                British: Pound Sterling</a>
+            </div> 
+					</li>
+					<!-- check code well for proper rendering -->
+
+
+					<li class="nav-item dropdown">
+						<a class="nav-link font-weight-bold text__color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							<i class="fas fa-user-circle"></i>
+							Account
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Log in</a>
+							<a class="dropdown-item" href="#">Sign up</a>
+						</div>
+					</li>
+				</ul>
+				<!-- <ul class="navbar-nav nav__ul" id="nav__ul">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Contact
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Whatapp</a>
+							<a class="dropdown-item" href="#">Phone Number</a>
+							<a class="dropdown-item" href="#">Email</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							<i class="fas fa-user-circle"></i>
+							Account
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Log in</a>
+							<a class="dropdown-item" href="#">Sign up</a>
+						</div>
+					</li>
+				</ul> -->
+				<!-- right menu ends here -->
+
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!-- search section starts here -->
+		<div class="search__boxwrapper" id="navbar__top">
+			<div class="container shadow-lg search__form">
+				<div class="navbartop__items">
+
+					<!-- logo starts here -->
+					<div class="site__logo">
+						<a href="#">
+							<figure class="logo__img">
+								<img src="assets/img/logo.PNG" alt="logo.PNG" />
+							</figure>
+						</a>
+					</div>
+					<!-- logo ends here -->
+
+					<!-- search form starts here -->
+					<form class="newsearch__form" action="">
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-4 search__boxcol">
+								<div class="search__box">
+									<span class="search__boxicon">
+										<i class="fas fa-search"></i>
+									</span>
+									<input type="search" class="w-100 search__input" id="" placeholder="search for a city or hotel">
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3 search__boxcol">
+								<div class="search__box">
+									<span class="search__boxicon">
+										<i class="far fa-calendar-alt"></i>
+									</span>
+									<input type="text" id="checkin" name="checkin" class="w-100 search__input" placeholder="Check in" value="" data-date-format="dd-mm-yyyy"
+									 aria-label="Checkin date" readonly>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3 search__boxcol">
+								<div class="search__box">
+									<span class="search__boxicon">
+										<i class="far fa-calendar-alt"></i>
+									</span>
+									<input type="text" id="checkout" name="chckout" class="w-100 search__input" placeholder="Check out" value="" data-date-format="dd-mm-yyyy"
+									 readonly="" aria-label="Checkout date">
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-2 search__boxcol">
+								<button type="submit" class="btn btn-primary w-100">Find Hotels
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- search form ends here -->
+
+				</div>
+			</div>
+		</div>
+		<!-- search section ends here -->
+
+
+		<div class="container card__wrapper">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-md-4">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="container">
+						<div class="card">
+							<!-- subscribe with email address to stay update here -->
+							<div class="card-body">
+								<h5 class="card-title">Stay updated with our latest rate</h5>
+								<form>
+									<div class="form-group d-flex">
+										<input type="email" class="form-control" id="formGroupEmailsubscribe" name="email__subscribe" aria-label="Email Address"
+										 placeholder="name@example.com" required>
+										<input type="hidden" class="form-control" id="sendyCity" name="city" value="Owerri" required>
+										<input type="hidden" class="form-control" id="sendyState" name="state" value="Imo" required>
+										<a href="#" class="btn btn-primary">Subscribe</a>
+									</div>
+								</form>
+								<small class="text-white d-none" id="emailadded__mess">You have been successfully subscribed. Thanks!</small>
+								<small class="text-white d-none" id="emailadded__error">Your email address is correct, please, enter a vaild one.</small>
+								<small class="text-white d-none" id="emailalready__exist">The email is already subscribed. Try entering a different email</small>
+							</div>
+						</div>
+						<br>
+
+						<!-- find hotel map direction here -->
+						<div class="card">
+							<img src="assets/img/hotelgoogle__map.png" class="card-img-top" alt="hotelgoogle__map.png">
+							<div class="card-body">
+								<h5 class="card-title">Find a hotel close to an address</h5>
+								<form id="location-form">
+									<div class="search__box">
+										<!-- <a href="#"> -->
+										<span class="search__boxicon">
+											<i class="fas fa-search"></i>
+										</span>
+										<!-- </a> -->
+										<input type="text" class="w-100 form-control form-control-lg search__input font__size15" id="location-input" placeholder="search for a city or hotel">
+										<span class="search__boxicon">
+											<i class="fas fa-map-marker-alt"></i>
+										</span>
+									</div>
+								</form>
+								<div class="card-block" id="formatted-address"></div>
+								<div class="card-block" id="address-component"></div>
+								<div class="card-block" id="geometry"></div>
+							</div>
+						</div>
+						<br>
+
+						<!-- hotel search filters starts here -->
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">Search Filters</h5>
+							</div>
+
+							<!-- hotel price moveable range button starts here -->
+							<div class="card-body ">
+								<label for="customRange">What is your budget per night?</label>
+								<nav class="navbar navbar-expand-lg navbar__pricerange" aria-label="Page navigation example">
+									<div class="navbar-nav mr-auto">
+										<p>From ₦0</p>
+									</div>
+									<div>
+										<p>To ₦120,000</p>
+									</div>
+								</nav>
+								<input type="range" class="custom-range" id="customRange">
+								<div class="text-center">
+									<a href="#" class="btn btn-primary w-100">Refine Search</a>
+								</div>
+							</div>
+							<!-- hotel price moveable range button ends here -->
+						</div>
+						<!-- hotel search filters starts here -->
+
+						<!-- hotels price-range checboxes starts here -->
+						<div class="card">
+							<div class="card-body price__checkbox">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck1">
+									<label class="custom-control-label" for="customCheck1">₦0 - ₦20,000 per night</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck2">
+									<label class="custom-control-label" for="customCheck2">₦21,000 - ₦40,000 per night</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck3">
+									<label class="custom-control-label" for="customCheck3">₦41,000 - ₦60,000 per night</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck4">
+									<label class="custom-control-label" for="customCheck4">₦61 - ₦80,000 per night</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck5">
+									<label class="custom-control-label" for="customCheck5">₦81,000 + per night</label>
+								</div>
+								<div>
+									<a href="#" class="btn btn-primary w-100">Refine Search</a>
+								</div>
+							</div>
+						</div>
+						<!-- hotels price-range checboxes ends here -->
+
+
+						<!-- search filter facilities starts here -->
+						<div class="card text-right">
+							<div class="card-body">
+								<div class="card-title">
+									<h5 class="card-title text-left ">Only Show hotels with amenities</h5>
+								</div>
+								<div class="search__ff">
+									<div class="d-flex">
+										<span class="searchfilter__facilities">
+											<i class="fas fa-glass-martini-alt"></i>
+										</span>
+										<p>Bar and Lounge</p>
+									</div>
+									<div class="d-flex">
+										<span class="searchfilter__facilities">
+											<i class="fas fa-swimming-pool"></i>
+										</span>
+										<p>Swimming Pool</p>
+									</div>
+									<div class="d-flex">
+										<span class="searchfilter__facilities">
+											<i class="fas fa-utensils"></i>
+										</span>
+										<p>Restaurant(s)</p>
+									</div>
+									<div class="d-flex">
+										<span class="searchfilter__facilities">
+											<i class="fas fa-wifi"></i>
+										</span>
+										<p>Wireless Internet</p>
+									</div>
+									<div class="d-flex">
+										<span class="searchfilter__facilities">
+											<i class="fas fa-dumbbell"></i>
+										</span>
+										<p>Gym</p>
+									</div>
+									<div class="d-flex search__ff">
+										<span class="searchfilter__facilities">
+											<i class="fas fa-home"></i>
+										</span>
+										<p>Super Markect</p>
+									</div>
+								</div>
+								<!-- <div class="search__ff">
+										<div class="d-flex">
+											<figure class="searchfilter__facilities">
+												<img src="" alt="" />
+											</figure>
+											<p>Bar and Lounge</p>
+										</div>
+										<div class="d-flex search__ff">
+											<figure class="searchfilter__facilities">
+												<img src="" alt="" />
+											</figure>
+											<p>Swimming Pool</p>
+										</div>
+										<div class="d-flex search__ff">
+											<figure class="searchfilter__facilities">
+												<img src="" alt="" />
+												<i class="fas fa-utensils"></i>
+											</figure>
+											<p>Restaurant(s)</p>
+										</div>
+										<div class="d-flex search__ff">
+											<figure class="searchfilter__facilities">
+												<img src="" alt="" />
+											</figure>
+											<p>Wireless Internet</p>
+										</div>
+										<div class="d-flex search__ff">
+											<figure class="searchfilter__facilities">
+												<img src="" alt="" />
+											</figure>
+											<p>Gym</p>
+										</div>
+										<div class="d-flex search__ff">
+											<figure class="searchfilter__facilities">
+												<img src="" alt="" />
+											</figure>
+											<p>Super Markect</p>
+										</div>
+									</div> -->
+							</div>
+						</div>
+						<!-- search filter facilities ends here -->
+
+						<!-- select area in the state for hotel booking starts here -->
+						<div class="card">
+							<div class="card-body price__checkbox">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck01">
+									<label class="custom-control-label" for="customCheck01">Umuahia West (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck02">
+									<label class="custom-control-label" for="customCheck02">Umuahia East (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck03">
+									<label class="custom-control-label" for="customCheck03">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck04">
+									<label class="custom-control-label" for="customCheck04">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck05">
+									<label class="custom-control-label" for="customCheck05">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck06">
+									<label class="custom-control-label" for="customCheck06">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck07">
+									<label class="custom-control-label" for="customCheck07">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck08">
+									<label class="custom-control-label" for="customCheck08">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck09">
+									<label class="custom-control-label" for="customCheck09">Umuahia (26 Hotels)</label>
+								</div>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="customCheck10">
+									<label class="custom-control-label" for="customCheck10">Umuahia (26 Hotels)</label>
+								</div>
+								<div>
+									<a href="#" class="btn btn-primary w-100">View more cites</a>
+								</div>
+							</div>
+						</div>
+						<!-- select area in the state for hotel booking starts here -->
+
+						<br>
+					</div>
+				</div>
+				<div class="col-12 col-sm-8 col-md-8">
+					<!-- page heading -->
+					<div class="container">
+						<div class="card__wrapper">
+							<h2>354 Hotels in Owerri</h2>
+						</div>
+
+						<!-- hotel search by category starts here-->
+						<div class="container hotelsmenu__search">
+							<div class="card-group">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Our Top Picks</h5>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Luxury Hotels</h5>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Cheap Hotels</h5>
+
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Best Hotels</h5>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Most Popular</h5>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- hotel search by category ends here-->
+
+						<!-- each hotel card details starts here -->
+						<div class="hotel__detailwpr">
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												41 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<!-- hotel information here -->
+											<div class="card__body">
+												<div class="row">
+													<!-- Hotels Details cards with discount and reviews starts here-->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<div class="listinghotels__review">
+															<figure>
+																<img src="" alt="" />
+															</figure>
+															<blockquote class="listinghotels__reviewtext">
+																<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem officia adipisci iusto...</p>
+																<br>
+																<h6>- Mr. Tolu</h6>
+															</blockquote>
+														</div>
+
+
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-dumbbell"></i>
+																<p class="card__fontsize">Gym</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<div class="listinghotelsprices__discount">
+															<p>₦5,500</p>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</div>
+
+														<div class="listinghotels__ratingbox">
+															<p>8.5 Excellent</p>
+															<span class="text-dark card__fontsize">From 4 reviews</span>
+														</div>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												230 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-wifi"></i>
+																<p class="card__fontsize">Internet</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦9,500
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												244 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-dumbbell"></i>
+																<p class="card__fontsize">Gym</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-wifi"></i>
+																<p class="card__fontsize">Internet</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<p class="listinghotelsprices__discount">₦6,000
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												150 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦9,000
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												41 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦15,500
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												41 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-dumbbell"></i>
+																<p class="card__fontsize">Gym</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦5,500
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												50 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦9,000
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												44 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-dumbbell"></i>
+																<p class="card__fontsize">Gym</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-wifi"></i>
+																<p class="card__fontsize">Internet</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦6,000
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												41 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-dumbbell"></i>
+																<p class="card__fontsize">Gym</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦5,500
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="hotels__in__a__state.hotel__information.html">
+								<div class="card mb-3">
+									<div class="row no-gutters">
+										<div class="col-md-4">
+											<!-- hotel slide images here -->
+											<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+												<div class="carousel-inner">
+													<div class="carousel-item active carousel__items">
+														<img src="assets/img/abstract-1781479__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/flourish-2031232__340.png" class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item carousel__items">
+														<img src="assets/img/img_hero.jpg" class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											<div class="listinghotels__likes">
+												<i class="far fa-thumbs-up"></i>
+												44 people like this hotel
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="card__body">
+												<div class="row">
+													<!-- hotel detail with review starts here -->
+													<div class="col-8 col-sm-8 col-md-8">
+														<h5 class="card-title font-weight-bold text-primary card__fontsize">CARD TITLE HERE</h5>
+														<p class="card-text card__fontsize">
+															<a href="#">Umuahia</a>,
+															<a href="#">Abia</a> - National War Museum Road Umuahia
+														</p>
+
+														<br>
+														<br>
+														<br>
+														<br>
+
+														<!-- listing hotels facilities here -->
+														<div class="listinghotels__facilities">
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-utensils"></i>
+																<p class="card__fontsize">Restaurant</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-glass-martini-alt"></i>
+																<p class="card__fontsize">Bar</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-swimming-pool"></i>
+																<p class="card__fontsize">Pool</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-dumbbell"></i>
+																<p class="card__fontsize">Gym</p>
+															</div>
+															<div class="listinghotels__facilitiestools">
+																<i class="fas fa-wifi"></i>
+																<p class="card__fontsize">Internet</p>
+															</div>
+														</div>
+													</div>
+													<div class="col-3 col-sm-4 col-md-4 listinghotels__prices">
+														<!-- listing hotels prices here-->
+														<p class="listinghotelsprices__discount">₦6,000
+															<br>
+															<span class="text-dark card__fontsize">avg/night</span>
+														</p>
+														<br>
+														<br>
+														<br>
+
+														<div>
+															<a href="addyourhotel.html" class="">
+																<button class="btn btn-primary">Book Now</button>
+															</a>
+														</div>
+													</div>
+													<!-- hotel detail with review ends here -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- each hotel card details starts here -->
+
+						<!-- hotel pagination search starts here-->
+						<nav class="navbar navbar-expand-lg pagination__nav card__fontsize" aria-label="Page navigation example">
+							<div class="navbar-nav mr-auto">
+								<p>Showing Results 21-30 of 40</p>
+							</div>
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link" href="hotels__in__a__state__2.html">Previous</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="hotels__in__a__state.html">1
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="hotels__in__a__state__2.html">2</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link" href="#">3
+										<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="hotels__in__a__state__4.html">4</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="hotels__in__a__state__4.html">Next Page</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- hotel pagination search ends here-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<!-- download app here -->
+		<section class="container">
+			<div class="text-center">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-6 col-md-6">
+						<!-- <div class="card"> -->
+						<figure class="app__img">
+							<img alt="Android App Image" src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/get-app-image.png">
+						</figure>
+						<!-- </div> -->
+					</div>
+					<div class="col-12 col-sm-6 col-md-6">
+						<div class="app__img">
+							<div class="getapp__text">
+								<div class="getapp__header">
+									<h1>Get the app</h1>
+								</div>
+								<h3>hotels.ng</h3>
+								<p>Book your hotel instantly with our Android App.</p>
+								<a target="_blank" href="https://play.google.com/store/apps/details?id=ng.hotels.app">
+									<figure class="get__appplaystore">
+										<img alt="Get the Hotels.ng app" src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/google-play.png">
+									</figure>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- moving text  -->
+		<section class="text-center banner__section">
+			<marquee width="90%" direction="left" height="100%" class="p-1">
+				<h4>
+					My name is Omodara, Tolulope Omotayo, {Also known as ToluFemiTayo ... TFT} a Front-end Developer.
+					<span class="text-danger font-weight-bold">|</span> Here are links to my projects ...
+					<a href="https://tolufemitayo.github.io/Project__one/">https://tolufemitayo.github.io/Project__one/</a> ...
+					<a href="https://tolufemitayo.github.io/Project__two/">https://tolufemitayo.github.io/Project__two/</a> ...
+					<a href="https://tolufemitayo.github.io/www.tolufemitayo.com">https://tolufemitayo.github.io/www.tolufemitayo.com</a>
+					...
+					<span class="text-danger font-weight-bold">|</span> Hotel Booking Nigeria Limited is project I wrote from the scratch after my training in Frontend Development.
+					<span class="text-danger font-weight-bold">|</span> By
+					<a href="#" class="text-success">booking</a> in the Hotel Booking Nigeria Limited, you will certainly be satisfied with our services which will make
+					a difference in your stay in the environment.</h4>
+			</marquee>
+		</section>
+
+		<!-- footer links -->
+		<section class="text-left text-white footer__wrapper footer__quicklinks">
+			<div class="row">
+				<div class="col-6 col-sm-4 col-md-2">
+					<div class="text-left sub__heading">
+						<h4>Company</h4>
+					</div>
+					<ul>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="#">Job Vacancy</a>
+						</li>
+						<li>
+							<a href="#">Terms and Conditions</a>
+						</li>
+						<li>
+							<a href="#">Private Policy</a>
+						</li>
+						<li>
+							<a href="#">Press Page</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">How it Works</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3">
+					<div class="text-left sub__heading">
+						<h4>Community</h4>
+					</div>
+					<ul>
+						<li>
+							<a href="#">Twitter</a>
+						</li>
+						<li>
+							<a href="#">Linkdlin</a>
+						</li>
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+						<li>
+							<a href="#">Google</a>
+						</li>
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">Tourist Attractions</a>
+						</li>
+						<li>
+							<a href="#">Travel Blog</a>
+						</li>
+						<li>
+							<a href="#">Travel Guide</a>
+						</li>
+						<li>
+							<a href="#">Top Hotels in Nigeria</a>
+						</li>
+						<li>
+							<a href="#">Top Places in Nigeria</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-md-3">
+					<div class="text-left sub__heading">
+						<h4>Top Cities</h4>
+					</div>
+					<ul>
+						<li>
+							<a href="#">Hotels in Lagos</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Owerri</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Abia</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Port Harcourt</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Jos</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Ikoyi</a>
+						</li>
+						<li>
+							<a href="#">Hotels in MaryLand</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Abuja</a>
+						</li>
+						<li>
+							<a href="#">Hotels in Calabar</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-md-2">
+					<div class="text-left sub__heading">
+						<h4>Top Attractions</h4>
+					</div>
+					<ul>
+						<li>
+							<a href="#">Abuja</a>
+						</li>
+						<li>
+							<a href="#">Calabar</a>
+						</li>
+						<li>
+							<a href="#">Lagos</a>
+						</li>
+						<li>
+							<a href="#">Enugu</a>
+						</li>
+						<li>
+							<a href="#">Jos</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-6 col-sm-4 col-md-2">
+					<div class="text-left sub__heading">
+						<h4>Top Hotels</h4>
+					</div>
+					<ul>
+						<li>
+							<a href="#">
+								Hotel Ibis Lagos Ikeja
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Beni Apartments
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Limeridge Hotel
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Grand Ibro Hotel
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Transcorp Hotels
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Silver Grandeur Hotel
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Beni Gold Hotel and Apartments
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Jeromes Garden and Suites
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer navbar -->
+		<div class="navbar navbar-expand-lg text-white footer__navbar card__wrapper footer__wrapper">
+			<div class="navbar-nav mr-auto">
+				<!-- <p>Copyright © 2019 Hotel Booking Nigeria Limited. All Rights Reserved</p> -->
+				<figure class="logo__img">
+					<img src="assets/img/logo.PNG" alt="logo.PNG" />
+				</figure>
+			</div>
+
+			<!-- social networks here -->
+			<div class="footer__wrapper fwpr">
+				<div class="sub__heading">
+					<h4>Social Network</h4>
+				</div>
+				<ul class="navbar-nav">
+					<li>
+						<a href="#" class="nav-link">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link">
+							<i class="fab fa-google"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- certification here -->
+			<div class="certified__org">
+				<span>Certified by:</span>
+				<figure class="certifiedorg__icon">
+					<img src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/footer/nanta.svg" alt="nanta icon" title="National Association of Nigeria Travel Agencies (NANTA)">
+					<img src="https://d19yo8val8huli.cloudfront.net/hotels/v7/img/footer/ntdc.svg" alt="ntdc icon" title="Nigerian Tourism Development Corporation (NTDC)">
+				</figure>
+			</div>
+		</div>
+
+		<!-- copyright here -->
+		<div class="text-left copyright__section">
+			<p>Copyright © 2019 TFT Hotel Booking Nigeria Limited. All Rights Reserved</p>
+		</div>
+	</footer>
+
+	<!-- sticky navbar -->
+	<script>
+		const nav = document.querySelector('#navbar__top');
+		const topOfNav = nav.offsetTop;
+
+
+		function fixNav() {
+			// console.log(topOfNav, window.scrollY);
+			if (window.scrollY >= topOfNav) {
+				document.body.style.paddingTop = nav.offsetTop + 'px';
+				document.body.classList.add('fixed__nav');
+			} else {
+				document.body.classList.remove('fixed__nav');
+				document.body.style.paddingTop = 0;
+			}
+		}
+
+		window.addEventListener('scroll', fixNav);
+	</script>
+	<script src="assets/plugins/jquery.min.js"></script>
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
